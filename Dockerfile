@@ -1,10 +1,13 @@
 FROM node:latest
 
-COPY . /ping-server
-
 WORKDIR /ping-server
 
-RUN npm install
-CMD ["npm",  "start"]
+COPY package.json ./
+COPY yarn.lock ./
 
+RUN yarn install
+
+COPY . ./
+
+CMD ["npm",  "start"]
 EXPOSE 3000:3000
