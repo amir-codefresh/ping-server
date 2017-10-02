@@ -9,9 +9,12 @@
     "express": "^4.16.1"
   },
   "devDependencies": {
+    "coverage-percentage": "^0.0.2",
     "jest": "^21.2.1"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "test:ci": "./test_ci.sh",
+    "generateCoverage": "coverage-percentage ./coverage/lcov.info --lcov"
   }
 }

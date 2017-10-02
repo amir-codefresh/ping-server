@@ -528,6 +528,12 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
+coverage-percentage@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/coverage-percentage/-/coverage-percentage-0.0.2.tgz#5fd53d1b1563e58ae3eb721afba3926200327cc6"
+  dependencies:
+    lcov-parse "0.0.6"
+
 cross-spawn@^5.0.1:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -1614,6 +1620,10 @@ lcid@^1.0.0:
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
   dependencies:
     invert-kv "^1.0.0"
+
+lcov-parse@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/lcov-parse/-/lcov-parse-0.0.6.tgz#819e5da8bf0791f9d3f39eea5ed1868187f11175"
 
 leven@^2.1.0:
   version "2.1.0"

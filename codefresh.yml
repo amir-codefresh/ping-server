@@ -12,4 +12,16 @@ steps:
     working_directory: IMAGE_WORK_DIR
     description: Performing unit tests...
     commands:
-      - npm run test
+      - yarn test:ci
+    environments:
+      - CF_VOLUME_PATH=${{CF_VOLUME_PATH}}
+
+  new_step:
+    image: alpine
+    commands:
+      - echo Test coverage is ${{COVERAGE}}
+    on_finish:
+      metadata:
+        set:
+          - ${{build-image.imageId}}:
+            - Coverage: ${{COVERAGE}}
