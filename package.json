@@ -1,0 +1,11 @@
+{
+  "name": "ping-server",
+  "version": "1.0.0",
+  "description": "Exmaple of using metadata with codefresh",
+  "main": "server.js",
+  "author": "codefresh",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
