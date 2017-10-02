@@ -1,0 +1,15 @@
+version: '1.0'
+
+steps:
+  build-image:
+    type: build
+    description: codefresh example
+    image-name: codefreshexamples/ping-server
+    tag: latest
+
+  perform_tests:
+    image: ${{build-image}}
+    working_directory: IMAGE_WORK_DIR
+    description: Performing unit tests...
+    commands:
+      - npm run test
