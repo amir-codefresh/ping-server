@@ -18,13 +18,23 @@ steps:
       - yarn test:ci
     environments:
       - CF_VOLUME_PATH=${{CF_VOLUME_PATH}}
+    on_success:
+      metadata:
+        set:
+          - '${{build-image.imageId}}':
+              - CF_QUALITY: true
+    on_fail:
+      metadata:
+        set:
+          - '${{build-image.imageId}}':
+              - CF_QUALITY: false
 
   new_step:
     image: alpine
     commands:
-      - echo Test coverage is ${{COVERAGE}}
+      - echo Test coverage at ${{COVERAGE}}
     on_finish:
       metadata:
         set:
-          - ${{build-image.imageId}}:
+          - '${{build-image.imageId}}':
             - coverage: ${{COVERAGE}}
