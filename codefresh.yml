@@ -6,6 +6,9 @@ steps:
     description: codefresh example
     image-name: codefreshexamples/ping-server
     tag: latest
+    metadata:
+      set:
+        - commit_url: '${{CF_COMMIT_URL}}'
 
   perform_tests:
     image: ${{build-image}}
@@ -24,4 +27,4 @@ steps:
       metadata:
         set:
           - ${{build-image.imageId}}:
-            - Coverage: ${{COVERAGE}}
+            - coverage: ${{COVERAGE}}
