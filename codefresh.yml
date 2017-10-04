@@ -9,6 +9,7 @@ steps:
     metadata:
       set:
         - commit_url: '${{CF_COMMIT_URL}}'
+        - note: 'codefresh metadata example'
 
   perform_tests:
     image: ${{build-image}}
