@@ -1,4 +1,4 @@
-c2# Ping Server
+gc2# Ping Server
 amir1
 This project demonstrates how to add coverage percetage to the image annotations in codefresh.io
 
