@@ -6,3 +6,4 @@ Add it to your codefresh account to see it in action from the _examples_ page.
 a
 1
 t
+f
