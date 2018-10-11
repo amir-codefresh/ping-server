@@ -1,0 +1,4 @@
+FROM alpine
+
+RUN addgroup -S amir && adduser -S -G amir amir                                                                                                   
+USER amir
