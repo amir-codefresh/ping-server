@@ -3,7 +3,7 @@ version: '1.0'
 steps:
   build-image:
     type: build
-    description: codefresh example
+    description: "codefresh example"
     image-name: codefreshexamples/ping-server
     tag: latest
     metadata:
