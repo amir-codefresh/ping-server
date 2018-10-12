@@ -4,4 +4,4 @@ This project demonstrates how to add coverage percetage to the image annotations
 
 Add it to your codefresh account to see it in action from the _examples_ page.
 a
-x1
+x12
